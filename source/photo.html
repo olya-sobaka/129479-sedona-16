@@ -1,34 +1,31 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
 </head>
-
 <body>
   <header class="page-header">
     <nav class="main-nav">
-      <button class="main-nav__close" type="button">Закрыть меню</button>
+      <button class="main-nav__close" type="button">Открыть/закрыть меню</button>
       <ul class="main-nav__list">
-        <li class="main-nav__item main-nav__item--active button">
+        <li class="main-nav__item main-nav__item--active">
           <a href="index.html">Главная</a>
         </li>
-        <li class="main-nav__item button">
+        <li class="main-nav__item">
           <a>Фото и видео</a>
         </li>
-        <li class="main-nav__item button">
+        <li class="main-nav__item">
           <a href="form.html">Форма отзыва</a>
         </li>
-        <li class="main-nav__item button">
-          <a href="#">Html Academy</a>
+        <li class="main-nav__item">
+          <a href="https://htmlacademy.ru/">Html Academy</a>
         </li>
       </ul>
-      <a class="page-header__logo">
+      <a class="page-header__logo" href="index.html">
         <img class="page-header__logo-image" src="http://placehold.it/150x100" width="102" height="83"
           alt="Логотип Седоны">
       </a>
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
     </nav>
   </header>
   <main class="page-main">
@@ -36,50 +33,57 @@
     <section class="photo">
       <div class="page-intro">
         <h1 class="page-intro__title">Фото и видео</h1>
-        <h2 class="visually-hidden">Фото</h2>
         <p class="page-intro__about">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
           политике и экономике.</p>
       </div>
-      <ul class="pic-list">
-        <li class="pic-list__item">
+      <ul class="post-list">
+        <li class="post">
           <a href="#">
-            <img class="pic-list__picture" src="http://placehold.it/150x100" width="280" height="280"
+            <img class="post__picture" src="http://placehold.it/150x100" width="280" height="280"
               alt="Фото дороги на закате в оранжевых тонах">
           </a>
-          <h3 class="pic-list__title">Неродные просторы</h3>
-          <p class="pic-list__creator">Автор фото: Борис</p>
-          <span class="pic-list__like"></span>
-          <span class="pic-list__liked">1350</span>
+          <h3 class="post__title">Неродные просторы</h3>
+          <p class="post__creator">Автор фото: Борис</p>
+          <div class="post__likes-wrapper">
+            <button class="post__like-btn" type="button"></button>
+            <span class="post__liked">1350</span>
+          </div>
         </li>
-        <li class="pic-list__item">
+        <li class="post">
           <a href="#">
-            <img class="pic-list__picture" src="http://placehold.it/150x100" width="280" height="280"
+            <img class="post__picture" src="http://placehold.it/150x100" width="280" height="280"
               alt="Приближенное фото экзотического растения на фоне скал">
           </a>
-          <h3 class="pic-list__title">Местная растительность</h3>
-          <p class="pic-list__creator">Автор фото: Сергей</p>
-          <span class="pic-list__like"></span>
-          <span class="pic-list__liked">143</span>
+          <h3 class="post__title">Местная растительность</h3>
+          <p class="post__creator">Автор фото: Сергей</p>
+          <div class="post__likes-wrapper">
+            <button class="post__like-btn" type="button"></button>
+            <span class="post__liked">143</span>
+          </div>
         </li>
-        <li class="pic-list__item">
+        <li class="post">
           <a href="#">
-            <img class="pic-list__picture" src="http://placehold.it/150x100" width="280" height="280"
+            <img class="post__picture" src="http://placehold.it/150x100" width="280" height="280"
               alt="Фото дороги, пролегающей через лес - вид сверху">
           </a>
-          <h3 class="pic-list__title">Дорога на север</h3>
-          <p class="pic-list__creator">Автор фото: Петр</p>
-          <span class="pic-list__like"></span>
-          <span class="pic-list__liked">96</span>
+          <h3 class="post__title">Дорога на север</h3>
+          <p class="post__creator">Автор фото: Петр</p>
+          <div class="post__likes-wrapper">
+            <button class="post__like-btn" type="button"></button>
+            <span class="post__liked">96</span>
+          </div>
         </li>
-        <li class="pic-list__item">
+        <li class="post">
           <a href="#">
-            <img class="pic-list__picture" src="http://placehold.it/150x100" width="280" height="280"
-              alt="Фото домтопримечательности Мост Дьявола">
+            <img class="post__picture" src="http://placehold.it/150x100" width="280" height="280"
+              alt="Фото доcтопримечательности Мост Дьявола">
           </a>
-          <h3 class="pic-list__title">Мост дьявола</h3>
-          <p class="pic-list__creator">Автор фото: Антон</p>
-          <span class="pic-list__like"></span>
-          <span class="pic-list__liked">254</span>
+          <h3 class="post__title">Мост дьявола</h3>
+          <p class="post__creator">Автор фото: Антон</p>
+          <div class="post__likes-wrapper">
+            <button class="post__like-btn" type="button"></button>
+            <span class="post__liked">254</span>
+          </div>
         </li>
       </ul>
     </section>
@@ -128,5 +132,4 @@
     </div>
   </footer>
 </body>
-
 </html>
