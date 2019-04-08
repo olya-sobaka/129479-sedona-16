@@ -7,30 +7,29 @@
   <body>
     <header class="page-header">
       <nav class="main-nav">
-        <button class="main-nav__close" type="button">Закрыть меню</button>
+        <button class="main-nav__close" type="button">Открыть/закрыть меню</button>
         <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--active button">
+          <li class="main-nav__item main-nav__item--active">
             <a>Главная</a>
           </li>
-          <li class="main-nav__item button">
-            <a href="#">Фото и видео</a>
+          <li class="main-nav__item">
+            <a href="photo.html">Фото и видео</a>
           </li>
-          <li class="main-nav__item button">
-            <a href="#">Форма отзыва</a>
+          <li class="main-nav__item">
+            <a href="form.html">Форма отзыва</a>
           </li>
-          <li class="main-nav__item button">
-            <a href="#">Html Academy</a>
+          <li class="main-nav__item">
+            <a href="https://htmlacademy.ru/">Html Academy</a>
           </li>
         </ul>
         <a class="page-header__logo">
           <img class="page-header__logo-image" src="http://placehold.it/150x100" width="102" height="83" alt="Логотип Седоны">
         </a>
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
       </nav>
     </header>
     <main class="page-main">
-      <h1 class="visually-hiddel">Добро пожаловать в город Седона</h1>
-      <div class="welcome-images--index"></div>
+      <h1 class="visually-hidden">Добро пожаловать в город Седона</h1>
+      <div class="welcome-images welcome-images--index"></div>
       <section class="about-sedona">
         <h2 class="visually-hidden">Преимущества Седоны</h2>
         <div class="page-intro">
@@ -42,10 +41,10 @@
             <h4 class="advantages-list__item-title">Настоящий городок</h4>
             <span  class="advantages-list__item-number">— №1 —</span>
             <p class="advantages-list__item-about">Седона не аттракцион для туристов, там течёт своя жизнь</p>
+            <div class="advantages-list__item advantages-list__item--img-hotel"></div>
           </li>
-          <li class="advantages-list__item advantages-list__item--img-hotel"></li>
-          <li class="advantages-list__item features">
-            <ul class="features__list">
+          <li>
+            <ul class="features">
               <li class="features__item features__item--accommodation">
                 <h5 class="features__item-title">Жилье</h5>
                 <p class="features__item-about">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
@@ -64,22 +63,26 @@
             <h4 class="advantages-list__item-title">Там есть Мост Дьявола</h4>
             <span  class="advantages-list__item-number">— №2 —</span>
             <p class="advantages-list__item-about">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            <div class="advantages-list__item advantages-list__item--img-mountains"></div>
           </li>
-          <li class="advantages-list__item advantages-list__item--img-mountains"></li>
-          <li class="advantages-list__item">
-            <h4 class="advantages-list__item-title">Небольшая площадь</h4>
-            <span  class="advantages-list__item-number">— №3 —</span>
-            <p class="advantages-list__item-about">Все интересные места находятся очень близко</p>
-          </li>
-          <li class="advantages-list__item">
-            <h4 class="advantages-list__item-title">Красивая дорога</h4>
-            <span  class="advantages-list__item-number">— №4 —</span>
-            <p class="advantages-list__item-about">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-          </li>
-          <li class="advantages-list__item">
-            <h4 class="advantages-list__item-title">Мало туристов</h4>
-            <span  class="advantages-list__item-number">— №5 —</span>
-            <p class="advantages-list__item-about">Большинство едет в Гранд Каньон и толпится там</p>
+          <li>
+            <ul class="more-advantages">
+              <li class="more-advantages__item">
+                <h4 class="more-advantages__item-title">Небольшая площадь</h4>
+                <span class="more-advantages__item-number">— №3 —</span>
+                <p class="more-advantages__item-about">Все интересные места находятся очень близко</p>
+              </li>
+              <li class="more-advantages__item">
+                <h4 class="more-advantages__item-title">Красивая дорога</h4>
+                <span class="more-advantages__item-number">— №4 —</span>
+                <p class="more-advantages__item-about">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              </li>
+              <li class="more-advantages__item">
+                <h4 class="more-advantages__item-title">Мало туристов</h4>
+                <span class="more-advantages__item-number">— №5 —</span>
+                <p class="more-advantages__item-about">Большинство едет в Гранд Каньон и толпится там</p>
+              </li>
+            </ul>
           </li>
         </ul>
       </section>
