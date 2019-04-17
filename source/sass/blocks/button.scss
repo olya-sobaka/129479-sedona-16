@@ -1,0 +1,9 @@
+.button {
+  @include button-reset;
+  color: $color-text-light;
+  background-color: $color-brand;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  padding: 17px 47px;
+}

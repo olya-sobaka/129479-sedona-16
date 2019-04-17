@@ -1,15 +1,19 @@
 body {
   @include font-general;
   padding: 0;
+  margin: 0;
   font-family: "PT Sans", Arial, sans-serif;
   color: $color-text-dark;
   text-transform: uppercase;
   letter-spacing: 0px;
-  background-color: $color-bg;
   text-align: center;
-  width: 320px;
-  margin-top: 0;
-  margin-right: auto;
-  margin-left: auto;
   box-sizing: border-box;
+}
+
+.body-wrapper {
+  width: 320px;
+  margin: 0 auto;
+  background-color: $color-bg;
+  -webkit-box-shadow: 0 0 10px #c4c4c4;
+            box-shadow: 0 0 10px #c4c4c4;
 }

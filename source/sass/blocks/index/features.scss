@@ -1,0 +1,30 @@
+.features {
+  list-style: none;
+  background-color: $color-bg;
+  margin: 0;
+  margin-bottom: 42px;
+  padding: 0;
+}
+
+.features__item {
+  padding: 41px 41px 0px 69px;
+  text-align: left;
+}
+
+.features__item-title {
+  position: relative;
+  @include font-heading;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.features__item-about {
+  margin: 0;
+}
+
+.features__item-title--accommodation::before {
+  content: "url("../../../img/icon-gift.svg")"
+  position: absolute;
+  top:
+  right:
+}
