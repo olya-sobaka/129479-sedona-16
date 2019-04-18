@@ -10,29 +10,29 @@ $color-input-bg-hover: #e5e5e5;
 $color-radio-hover: #e5e5e5;
 $color-radio-down: #d5d5d5;
 $color-radio-check: #333333;
-$color-radio-check-down: rgba( $color-radio-check, 0.3 );
+$color-radio-check-down: rgba($color-radio-check, 0.3);
 $color-text-dark: #000000;
 $color-text-light: #ffffff;
-$color-btn-text-down: rgba( $color-text-light, 0.3 );
+$color-btn-text-down: rgba($color-text-light, 0.3);
 
 // Цвета меню:
 
 $color-menu: $color-text-dark;
 $color-menu-hover: $color-brand;
-$color-menu-down: rgba( $color-text-dark, 0.3 );
+$color-menu-down: rgba($color-text-dark, 0.3);
 $color-menu-active: #766357;
 $color-menu-active-hover: #604e43;
-$color-menu-active-down: rgba( $color-menu-active, 0.3 );
+$color-menu-active-down: rgba($color-menu-active, 0.3);
 
 // Цвета видео-контролов:
 
 $color-vid-mobile-bg: #f2f2f2;
 $color-vid-mobile-btn: #5c6870;
-$color-vid-mobile-btn-hover: #333333;;
-$color-vid-mobile-btn-down: rgba( $color-vid-mobile-btn-hover, 0.3 );
+$color-vid-mobile-btn-hover: #333333;
+;
+$color-vid-mobile-btn-down: rgba($color-vid-mobile-btn-hover, 0.3);
 
 $color-vid-tab-bg: rgba(255, 255, 255, 0.6);
 $color-vid-tab-btn: #ffffff;
-$color-vid-tab-btn-hover: rgba( $color-vid-tab-btn, 0.6 );
-$color-vid-tab-btn-down: rgba( $color-vid-tab-btn, 0.3 );
-
+$color-vid-tab-btn-hover: rgba($color-vid-tab-btn, 0.6);
+$color-vid-tab-btn-down: rgba($color-vid-tab-btn, 0.3);

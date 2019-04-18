@@ -1,18 +1,15 @@
 .page-intro {
+  position: relative;
   margin: 43px 32px 0px;
   background-color: $color-bg;
+
   &::after {
-    content: "url("../../../img/bg-triangle.svg")";
+    content: url("../../../img/bg-triangle.svg");
+    position: absolute;
+    top: 167px;
+    left: -32px;
   }
 }
-
-// // ??????????????????????????????
-// .page-intro {
-//   background-image: url("../../../img/bg-triangle.svg");
-//   background-repeat: no-repeat;
-//   background-size: 766px 37px;
-//   background-position: 50% 200px;
-// }
 
 .page-intro__about {
   @include font-heading;
@@ -24,4 +21,3 @@
   @include font-general;
   margin: 0;
 }
-

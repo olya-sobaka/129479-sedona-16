@@ -1,9 +1,10 @@
 .features {
   list-style: none;
   background-color: $color-bg;
+  color: $color-text-dark;
   margin: 0;
-  margin-bottom: 42px;
   padding: 0;
+  padding-bottom: 42px;
 }
 
 .features__item {
@@ -23,8 +24,28 @@
 }
 
 .features__item-title--accommodation::before {
-  content: "url("../../../img/icon-gift.svg")"
+  content: url("../../../img/icon-house.svg");
   position: absolute;
-  top:
-  right:
+  top: 50%;
+  right: 50%;
+  width: 39px;
+  height: 37px;
+}
+
+.features__item-title--souvenirs::before {
+  content: url("../../../img/icon-gift.svg");
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  width: 39px;
+  height: 37px;
+}
+
+.features__item-title--food::before {
+  content: url("../../../img/icon-burger.svg");
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  width: 39px;
+  height: 37px;
 }

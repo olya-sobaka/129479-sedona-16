@@ -9,7 +9,8 @@
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
-  margin-bottom: 41px; /*??????????*/
+  margin-bottom: 41px;
+  /*??????????*/
 }
 
 .social {
@@ -30,9 +31,11 @@
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
+
   &:hover {
     background-color: #669ec0;
   }
+
   &:active {
     background-color: #5496bd;
   }
@@ -40,6 +43,7 @@
 
 .social__link--twitter {
   background-image: url("../../img/icon-twitter.svg");
+
   &:active {
     background-image: url("../../img/icon-twitter-down.svg");
   }
@@ -47,6 +51,7 @@
 
 .social__link--facebook {
   background-image: url("../../img/icon-facebook.svg");
+
   &:active {
     background-image: url("../../img/icon-facebook-down.svg");
   }
@@ -54,16 +59,19 @@
 
 .social__link--youtube {
   background-image: url("../../img/icon-youtube.svg");
+
   &:active {
     background-image: url("../../img/icon-youtube-down.svg");
   }
 }
 
 .copyright__logo {
+
   &:hover,
   &:focus {
     fill: $color-brand;
   }
+
   &:active {
     fill: #b2b2b2;
   }

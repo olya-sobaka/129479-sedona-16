@@ -3,7 +3,7 @@
 }
 
 .hotel-search__wrapper {
-  padding: 33px 30px 0;
+  padding: 0 20px;
 }
 
 .hotel-search__title {
@@ -11,7 +11,7 @@
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
-  margin: 0 0 30px;
+  margin: 30px 0 30px;
 }
 
 .hotel-search__description {
@@ -20,14 +20,16 @@
   font-weight: 400;
   line-height: 24px;
   margin: 0 0 40px;
+  padding: 0 9px;
 }
 
 .hotel-search__link {
+  display: block;
   margin-bottom: 50px;
 }
 
 .hotel-search__map {
-  background-image: url("../../../img/bg-map-mobile@1x.jpg")
+  background-image: url("../../../img/bg-map-mobile@1x.jpg");
   width: 320px;
   height: 350px;
 }
