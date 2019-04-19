@@ -1,0 +1,27 @@
+.page-intro {
+  margin: 43px 24px 33px 26px;
+  background-color: $color-bg;
+}
+
+.page-intro--triangle {
+  position: relative;
+  margin: 43px 32px 0px;
+}
+
+.page-intro--triangle::after {
+  content: url("../../../img/bg-triangle.svg");
+  position: absolute;
+  top: 167px;
+  left: -32px;
+}
+
+.page-intro__title {
+  @include font-heading;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.page-intro__about {
+  @include font-general;
+  margin: 0;
+}
