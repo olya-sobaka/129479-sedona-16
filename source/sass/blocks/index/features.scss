@@ -24,28 +24,40 @@
 }
 
 .features__item-title--accommodation::before {
-  content: url("../../../img/icon-house.svg");
+  content: "";
   position: absolute;
-  top: 50%;
-  right: 50%;
+  display: block;
   width: 39px;
   height: 37px;
+  background-image: url("../img/icon-house.svg");
+  background-repeat: no-repeat;
+  background-size: 39px 37px;
+  top: -10px;
+  left: -50px;
 }
 
 .features__item-title--souvenirs::before {
-  content: url("../../../img/icon-gift.svg");
+  content: "";
   position: absolute;
-  top: 50%;
-  right: 50%;
+  display: block;
   width: 39px;
   height: 37px;
+  background-image: url("../img/icon-gift.svg");
+  background-repeat: no-repeat;
+  background-size: 39px 37px;
+  top: -10px;
+  left: -50px;
 }
 
 .features__item-title--food::before {
-  content: url("../../../img/icon-burger.svg");
+  content: "";
   position: absolute;
-  top: 50%;
-  right: 50%;
+  display: block;
   width: 39px;
   height: 37px;
+  background-image: url("../img/icon-burger.svg");
+  background-repeat: no-repeat;
+  background-size: 39px 37px;
+  top: -10px;
+  left: -50px;
 }
