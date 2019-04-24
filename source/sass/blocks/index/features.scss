@@ -13,8 +13,8 @@
 }
 
 .features__item-title {
-  position: relative;
   @include font-heading;
+  position: relative;
   margin: 0;
   margin-bottom: 20px;
 }
