@@ -8,6 +8,17 @@ body {
   letter-spacing: 0;
   text-align: center;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../../jpg/sedona-index-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .body-wrapper {
@@ -15,4 +26,8 @@ body {
   margin: 0 auto;
   background-color: $color-bg;
   box-shadow: 0 0 10px #c4c4c4;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+   }
 }

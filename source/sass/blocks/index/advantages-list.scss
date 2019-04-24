@@ -4,19 +4,37 @@
   padding: 0;
   background-color: $color-brand;
   color: $color-text-light;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .advantages-list__item {
   padding-top: 45px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    width: 768px;
+  }
 }
 
 .advantages-list__item--triangle {
   padding-top: 60px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .advantages-list__item-title {
   @include font-heading;
   margin: 0 0 16px;
+
+  @media (min-width: $tablet-width) {
+    padding: 46px 47px 0;
+  }
 }
 
 .advantages-list__item-number {
@@ -37,14 +55,26 @@
   background-repeat: no-repeat;
   background-size: 320px 260px;
   background-position: 0 0;
+
+  @media (min-width: $tablet-width) {
+    width: 512px;
+  }
 }
 
 .advantages-list__photo--img-hotel {
   background-color: #9e9282;
   background-image: url("../img/main-city-mobile@1x.jpg");
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/main-city-tablet@1x.jpg");
+  }
 }
 
 .advantages-list__photo--img-mountains {
   background-color: #7c6258;
   background-image: url("../img/main-bridge-mobile@1x.jpg");
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/main-bridge-tablet@1x.jpg");
+  }
 }
