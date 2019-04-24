@@ -1,0 +1,63 @@
+.features {
+  list-style: none;
+  background-color: $color-bg;
+  color: $color-text-dark;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 42px;
+}
+
+.features__item {
+  padding: 41px 41px 0px 69px;
+  text-align: left;
+}
+
+.features__item-title {
+  @include font-heading;
+  position: relative;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.features__item-about {
+  margin: 0;
+}
+
+.features__item-title--accommodation::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 39px;
+  height: 37px;
+  background-image: url("../img/icon-house.svg");
+  background-repeat: no-repeat;
+  background-size: 39px 37px;
+  top: -10px;
+  left: -50px;
+}
+
+.features__item-title--souvenirs::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 39px;
+  height: 37px;
+  background-image: url("../img/icon-gift.svg");
+  background-repeat: no-repeat;
+  background-size: 39px 37px;
+  top: -10px;
+  left: -50px;
+}
+
+.features__item-title--food::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 39px;
+  height: 37px;
+  background-image: url("../img/icon-burger.svg");
+  background-repeat: no-repeat;
+  background-size: 39px 37px;
+  top: -10px;
+  left: -50px;
+}

@@ -1,0 +1,35 @@
+.more-advantages {
+  list-style: none;
+  background-color: #eeeeee;
+  color: $color-text-dark;
+  padding: 30px 20px 30px;
+  margin: 0;
+}
+
+.more-advantages__item-title {
+  @include font-heading;
+  margin: 0 0 20px;
+}
+
+.more-advantages__item-number {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.more-advantages__item-about {
+  margin: 0 0 30px;
+}
+
+.more-advantages__item-about--no-margin {
+  margin: 0;
+}
+
+.more-advantages__border {
+  bottom: 0;
+  left: 20px;
+  display: block;
+  background-color: #d6d6d6;
+  width: 280px;
+  height: 1px;
+  margin-bottom: 30px;
+}

@@ -1,0 +1,45 @@
+.post-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.post {
+  border-top: 1px solid #e5e5e5;
+  padding: 22px 20px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.post__link {
+  display: block;
+  margin-bottom: 22px;
+}
+
+.post__title {
+  font-weight: 700;
+  margin: 0 0 10px;
+}
+
+.post__creator {
+  font-weight: 400;
+  text-transform: none;
+  margin: 0 0 10px;
+}
+
+.post__like-btn {
+  @include hidden-text;
+  width: 23px;
+  height: 21px;
+  border: none;
+  background-color: transparent;
+  background-image: url("../../../img/icon-like.svg");
+  cursor: pointer;
+  padding: 0;
+  margin-right: 14px;
+}
+
+.post__liked {
+  font-weight: 700;
+}

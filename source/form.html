@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
   <header class="page-header">
@@ -30,6 +31,60 @@
   </header>
   <main class="page-main">
     <div class="welcome-images"></div>
+    <section class="form">
+      <div class="form-intro">
+        <h1 class="form-intro__title">Оставьте свой отзыв</h1>
+        <p class="form-intro__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      </div>
+      <form class="review-form" method="get" action="https://echo.htmlacademy.ru">
+        <fieldset class="name form-block">
+          <legend class="name__legend">Представьтесь:</legend>
+          <label class="name__label">Имя*:
+            <input class="name__input" type="text" name="forename" placeholder="Петр" required>
+          </label>
+          <label class="name__label">Фамилия*:
+            <input class="name__input" type="text" name="lastname" placeholder="Иванов" required>
+          </label>
+          <label class="name__label">Отчество:
+            <input class="name__input" type="text" name="patronym" placeholder="Александрович">
+          </label>
+        </fieldset>
+        <fieldset class="contact form-block">
+          <legend class="contact__legend">Контактная информация:</legend>
+            <label class="contact__label">Контактный телефон*:
+              <input class="contact__input contact_input--phone" type="text" name="phone" placeholder="Введите телефон" required>
+            </label>
+            <label class="contact__label">Электронная почта*:
+              <input class="contact__input contact_input--email" type="text" name="email" placeholder="Введите e-mail" required>
+            </label>
+        </fieldset>
+        <fieldset class="impression form-block">
+          <legend class="impression__legend">Ваше общее впечатление:</legend>
+          <input class="impression__radio" type="radio" name="positive" id="positive" name="radio" value="Скорее положительное" checked>
+          <label class="impression__label" for="positive">Скорее положительное</label>
+          <input class="impression__radio" type="radio" name="negative" id="negative" name="radio" value="Скорее отрицательное">
+          <label class="impression__label" for="negative">Скорее отрицательное</label>
+          <input class="impression__radio" type="radio" name="uncertain" id="uncertain" name="radio" value="Затрудняюсь ответить">
+          <label class="impression__label" for="uncertain">Затрудняюсь ответить</label>
+        </fieldset>
+        <fieldset class="attraction form-block">
+          <legend class="attraction__legend">Посещенные достопримечательности:</legend>
+          <input class="attraction__checkbox" type="checkbox" name="devils-bridge" id="devils-bridge" value="Мост Дьявола" checked>
+          <label class="attraction__label" for="devils-bridge">Мост Дьявола</label>
+          <input class="attraction__checkbox" type="checkbox" name="bell-rock" id="bell-rock" value="Гора-Колокол" checked>
+          <label class="attraction__label" for="bell-rock">Гора-Колокол</label>
+          <input class="attraction__checkbox" type="checkbox" name="slide-park" id="slide-park" value="Слайд-парк" checked>
+          <label class="attraction__label" for="slide-park">Слайд-парк</label>
+          <input class="attraction__checkbox" type="checkbox" name="red-rocks" id="red-rocks" value="Красные скалы" checked>
+          <label class="attraction__label" for="red-rocks">Красные скалы</label>
+        </fieldset>
+        <fieldset class="emotions form-block">
+          <legend class="emotions__legend">Опишите свои эмоции:</legend>
+          <textarea class="emotions__textarea" name="text" rows="8" cols="30">Опишите подробно все свои восторги</textarea>
+        </fieldset>
+        <button class="review-form__button button" type="submit" value="Отправить отзыв"></button>
+      </form>
+    </section>
   </main>
   <footer class="page-footer">
       <span class="hashtag">#Visitsedona</span>
