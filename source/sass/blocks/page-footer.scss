@@ -6,11 +6,11 @@
 }
 
 .hashtag {
+  display: block;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
   margin-bottom: 41px;
-  /*??????????*/
 }
 
 .social {
@@ -32,7 +32,8 @@
   white-space: nowrap;
   overflow: hidden;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: #669ec0;
   }
 
