@@ -1,15 +1,26 @@
 .features {
+  display: flex;
+  flex-direction: column;
   list-style: none;
   background-color: $color-bg;
   color: $color-text-dark;
   margin: 0;
   padding: 0;
   padding-bottom: 42px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
 }
 
 .features__item {
   padding: 41px 41px 0px 69px;
   text-align: left;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+    padding: 164px 51px 0;
+  }
 }
 
 .features__item-title {
@@ -60,4 +71,17 @@
   background-size: 39px 37px;
   top: -10px;
   left: -50px;
+}
+
+.features__item-title--accommodation::before,
+.features__item-title--souvenirs::before,
+.features__item-title--food::before {
+  @media (min-width: $tablet-width) {
+    width: 75px;
+    height: 72px;
+    background-size: 75px 72px;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }

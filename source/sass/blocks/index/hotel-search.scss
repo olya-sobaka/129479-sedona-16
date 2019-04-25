@@ -4,6 +4,10 @@
 
 .hotel-search__wrapper {
   padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 27px 155px 8px;
+  }
 }
 
 .hotel-search__title {
@@ -29,7 +33,12 @@
 }
 
 .hotel-search__map {
+  Background-color: #e2e5d2;
   background-image: url("../../../img/bg-map-mobile@1x.jpg");
   width: 320px;
   height: 350px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
 }

@@ -1,8 +1,17 @@
 .page-footer {
+  display: flex;
+  flex-direction: column;
   background-color: $color-bg;
   width: 100%;
   padding: 35px 85px 23px;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 36px 60px;
+  }
 }
 
 .hashtag {
@@ -10,15 +19,17 @@
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
-  margin-bottom: 41px;
 }
 
 .social {
   display: flex;
-  justify-content: space-between;
   list-style: none;
-  margin: 40px auto;
+  margin: 40px 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .social__link {
@@ -27,6 +38,7 @@
   height: 48px;
   background-position: center center;
   background-repeat: no-repeat;
+  margin-right: 6px;
   display: block;
   text-indent: 100%;
   white-space: nowrap;
