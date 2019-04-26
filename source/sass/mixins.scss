@@ -31,3 +31,20 @@
   overflow: hidden;
   color: transparent;
 }
+
+//Размкры фото:
+
+@mixin photo-mobile-size {
+  width: 280px;
+  height: 280px;
+}
+
+@mixin photo-tablet-size {
+  width: 324px;
+  height: 267px;
+}
+
+@mixin photo-desktop-size {
+  width: 400px;
+  height: 267px;
+}

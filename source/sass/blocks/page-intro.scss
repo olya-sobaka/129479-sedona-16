@@ -1,6 +1,10 @@
 .page-intro {
   margin: 43px 24px 33px 26px;
   background-color: $color-bg;
+
+  @media (min-width: $tablet-width) {
+    margin: 75px 170px;
+  }
 }
 
 .page-intro--triangle {
@@ -9,6 +13,10 @@
 
   @media (min-width: $tablet-width) {
     margin: 51px 139px 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 113px 385px 77px; // Почему-то не работает
   }
 }
 
@@ -27,6 +35,10 @@
   @include font-heading;
   margin: 0;
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .page-intro__about {

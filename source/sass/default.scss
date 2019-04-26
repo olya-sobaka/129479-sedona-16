@@ -8,12 +8,6 @@ body {
   letter-spacing: 0;
   text-align: center;
   box-sizing: border-box;
-
-  @media (min-width: $tablet-width) {
-    background-image: url("../../../jpg/sedona-index-desktop.jpg");
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-  }
 }
 
 img {
@@ -30,4 +24,8 @@ img {
   @media (min-width: $tablet-width) {
     width: $tablet-width;
    }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
 }
