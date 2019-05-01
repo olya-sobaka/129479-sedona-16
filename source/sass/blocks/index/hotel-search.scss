@@ -8,6 +8,10 @@
   @media (min-width: $tablet-width) {
     padding: 27px 155px 8px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 27px 372px 8px;
+  }
 }
 
 .hotel-search__title {
@@ -16,6 +20,10 @@
   font-weight: 700;
   line-height: 26px;
   margin: 30px 0 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .hotel-search__description {

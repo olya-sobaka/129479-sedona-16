@@ -1,11 +1,23 @@
 .video-about {
   border-top: 1px solid #e5e5e5;
   padding: 39px 41px 40px 42px;
+
+  @media (min-width: $tablet-width) {
+    padding: 68px 176px 78px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 72px 392px 76px;
+  }
 }
 
 .video-about__title {
   @include font-heading;
   margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .video-about__description {
@@ -13,101 +25,28 @@
   margin: 0;
 }
 
+.video-container {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    padding: 0 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 200px;
+  }
+}
+
 .video-player {
   position: relative;
   z-index: 1;
-}
 
-.video-controls {
-  position: relative;
-  z-index: 2;
-  width: 280px;
-  height: 111px;
-  margin: -53px auto 0;
-}
+  @media (min-width: $tablet-width) {
+    width: 648px;
+    height: 500px;
+  }
 
-.video-controls__slider-container {
-  position: relative;
-  width: 280px;
-  height: 45px;
-  background-color: rgba(#000000, 0.5);
-}
-
-.video-controls__scale {
-  position: absolute;
-  top: 22px;
-  left: 22px;
-  width: 225px;
-  height: 3px;
-  background-color: rgba(#ffffff, 0.2);
-}
-
-.video-controls__slider {
-  display: block;
-  position: absolute;
-  top: -4px;
-  left: 31px;
-  width: 10px;
-  height: 10px;
-  background-color: #ffffff;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.video-controls__control-pannel {
-  position: relative;
-  box-sizing: border-box;
-  width: 280px;
-  height: 66px;
-  background-color: $color-vid-mobile-bg;
-}
-
-.video-controls__btn {
-  color: transparent;
-  background-color: transparent;
-  border: none;
-  outline: none;
-  padding: 0;
-  font-size: 0px;
-}
-
-.video-controls__btn path,
-.video-controls__btn polygon {
-  fill: $color-vid-mobile-btn;
-}
-
-.video-controls__btn:hover path,
-.video-controls__btn:focus path,
-.video-controls__btn:hover polygon,
-.video-controls__btn:focus polygon {
-  fill: $color-vid-mobile-btn-hover;
-}
-
-.video-controls__btn:active path,
-.video-controls__btn:active polygon {
-  fill: $color-vid-mobile-btn-down;
-}
-
-.video-controls__btn--replay {
-  position: absolute;
-  top: 20px;
-  left: 8%;
-  width: 16px;
-  height: 20px;
-}
-
-.video-controls__btn--sub {
-  position: absolute;
-  top: 20px;
-  left: 65%;
-  width: 32px;
-  height: 20px;
-}
-
-.video-controls__btn--full {
-  position: absolute;
-  top: 20px;
-  left: 85%;
-  width: 20px;
-  height: 20px;
+  @media (min-width: $desktop-width) {
+    width: 800px;
+    height: 500px;
+  }
 }

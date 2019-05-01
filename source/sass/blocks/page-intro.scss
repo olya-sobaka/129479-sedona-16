@@ -16,7 +16,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 113px 385px 77px; // Почему-то не работает
+    margin: 113px 350px 77px;
   }
 }
 
@@ -38,6 +38,10 @@
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 21px;
   }
 }
 
